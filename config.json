@@ -1,5 +1,12 @@
 {
   "release": true,
-  "themeFolder": "./wp-content/themes/bienen",
-  "cssPreProcessors": ["stylus", "sass"]
+  "themePath": "./wp-content/themes/bienen",
+  "cssPreProcessors": [
+    "stylus",
+    "sass"
+  ],
+  "themeDistributive": "./theme",
+  "movedFolder": [
+    "languages"
+  ]
 }

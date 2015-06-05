@@ -1,17 +1,15 @@
-var PREFIX = "styl";
+var config = require('../config');
 var gulp = require('gulp');
-var gulpif = require('gulp-if')
+var gulpif = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCSS = require('gulp-minify-css');
 var handleErrors = require('../utils/handleErrors');
-var config = require('../config');
 var cssConfig = config.css;
-
 var _ = require('underscore');
-
 var preprocessors = cssConfig.preprocessors;
 var AVAILABLE_PREPROCESSORS = cssConfig.AVAILABLE_PREPROCESSORS;
+
 _.each(preprocessors, function(preprocessor) {
     var prefix = AVAILABLE_PREPROCESSORS[preprocessor];
     if(!prefix)
