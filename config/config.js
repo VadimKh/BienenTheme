@@ -3,7 +3,7 @@ var config = require("../config.json");
 module.exports = {
     release: config.release,
     themeDistributive: config.themeDistributive,
-    movedFolder: config.movedFolder,
+    excludeFolders: config.excludeFolders,
     themePath: config.themePath,
     css: {
         src: "./theme/css/*.", // +  PREFIX in tasks

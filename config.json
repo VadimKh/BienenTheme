@@ -6,7 +6,7 @@
     "sass"
   ],
   "themeDistributive": "./theme",
-  "movedFolder": [
+  "excludeFolders": [
     "languages"
   ]
 }
