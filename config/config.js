@@ -5,7 +5,8 @@ module.exports = {
     css: {
         src: "./css/*.", // +  PREFIX in tasks
         destination: config.themeFolder + "/css",
-        PREPROCESSORS: {
+        preprocessors: config.cssPreProcessors,
+        AVAILABLE_PREPROCESSORS: {
             stylus: "styl",
             less: "less",
             sass: ["scss", "sass"]
