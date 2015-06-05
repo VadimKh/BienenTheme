@@ -16,7 +16,8 @@ _.each(preprocessors, function(preprocessor) {
         return;
     var compilerName = preprocessor;
     var compiler = require('gulp-' + compilerName);
-    var  path = [];
+    var path = [];
+    prefix = _.isArray(prefix) ? prefix : [prefix];
 
     _.each(prefix, function(pref){
        path.push(cssConfig.src + pref);

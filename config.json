@@ -1,11 +1,10 @@
 {
   "release": true,
-  "themePath": "./wp-content/themes/bienen",
+  "siteUrl": "",
   "cssPreProcessors": [
     "stylus",
     "sass"
   ],
-  "themeDistributive": "./theme",
   "excludeFolders": [
     "languages"
   ]
