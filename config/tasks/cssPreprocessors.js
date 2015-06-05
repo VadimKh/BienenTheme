@@ -10,12 +10,16 @@ var cssConfig = config.css;
 
 var _ = require('underscore');
 
-var preprocessors = cssConfig.PREPROCESSORS;
-
-_.each(preprocessors, function(prefix, compilerName) {
-
+var preprocessors = cssConfig.preprocessors;
+var AVAILABLE_PREPROCESSORS = cssConfig.AVAILABLE_PREPROCESSORS;
+_.each(preprocessors, function(preprocessor) {
+    var prefix = AVAILABLE_PREPROCESSORS[preprocessor];
+    if(!prefix)
+        return;
+    var compilerName = preprocessor;
     var compiler = require('gulp-' + compilerName);
     var  path = [];
+
     _.each(prefix, function(pref){
        path.push(cssConfig.src + pref);
     });
