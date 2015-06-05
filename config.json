@@ -1,0 +1,5 @@
+{
+  "release": true,
+  "themeFolder": "./wp-content/themes/bienen",
+  "cssPreProcessors": ["stylus", "sass"]
+}

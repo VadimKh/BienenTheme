@@ -1,4 +1,4 @@
-var CONFIG_RELATIVE_PATH = './config';
+var CONFIG_RELATIVE_PATH = './';
 var CONFIG_RELATIVE_NAME = CONFIG_RELATIVE_PATH + '/config.json';
 var gulp = require('gulp');
 var jeditor = require("gulp-json-editor");
