@@ -1,6 +1,6 @@
 var config = require("../config.json");
 
-var themePath = "./wp-content/themes/bienen";
+var themePath = "../wp-content/themes/bienen";
 var themeDist = "./theme";
 var ignoredFolder = ["js", "css"];
 
@@ -23,5 +23,11 @@ module.exports = {
         src: "./theme/js/*.js", // +  PREFIX in tasks
         destination: themePath + "/js",
         concatName: 'main.js'
+    },
+    browserSync: {
+        proxy: config.siteUrl,
+        files: [
+            themePath + '/**'
+        ]
     }
 };
