@@ -6,6 +6,7 @@
     "sass"
   ],
   "excludeFolders": [
-    "languages"
+    "languages",
+    "js/vendors"
   ]
 }

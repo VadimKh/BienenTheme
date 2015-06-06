@@ -2,3 +2,4 @@ src
 .idea
 node_modules
 wp-content
+bower_components
