@@ -25,14 +25,20 @@ module.exports = {
     excludeFolders: config.excludeFolders,
     themePath: THEME_PATH,
     css: {
-        src: "./theme/css/*.", // +  PREFIX in tasks
+        src: THEME_DIST + "/css/*.", // +  PREFIX in tasks
         destination: THEME_PATH + "/css",
         preprocessors: includedCSSPreprocessors
     },
     js: {
-        src: "./theme/js/*.js", // +  PREFIX in tasks
+        src: THEME_DIST + "/js/*.js", // +  PREFIX in tasks
         destination: THEME_PATH + "/js",
         concatName: 'main.js'
+    },
+    img: {
+        src: [THEME_DIST + '/**/*.png', THEME_DIST + '/**/*.jpg', THEME_DIST + '/**/*.jpeg', THEME_DIST + '/**/*.gif'],
+        progressive: true,
+        optimizationLevel: 7,
+        interlaced: true
     },
     browserSync: {
         proxy: config.siteUrl,
