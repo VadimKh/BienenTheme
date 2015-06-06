@@ -8,22 +8,19 @@ var handleErrors = require('../utils/handleErrors');
 var cssConfig = config.css;
 var _ = require('underscore');
 var preprocessors = cssConfig.preprocessors;
-var AVAILABLE_PREPROCESSORS = cssConfig.AVAILABLE_PREPROCESSORS;
 
 _.each(preprocessors, function(preprocessor) {
-    var prefix = AVAILABLE_PREPROCESSORS[preprocessor];
-    if(!prefix)
-        return;
-    var compilerName = preprocessor;
+    var compilerName = preprocessor.preProcessor;
+    var prefix = preprocessor.prefix;
     var compiler = require('gulp-' + compilerName);
     var path = [];
-    prefix = _.isArray(prefix) ? prefix : [prefix];
 
     _.each(prefix, function(pref){
        path.push(cssConfig.src + pref);
     });
 
     gulp.task(compilerName, function () {
+        console.log(arguments);
         return gulp.src(path)
             .pipe(sourcemaps.init())
             .pipe(compiler())

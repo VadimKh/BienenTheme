@@ -1,33 +1,43 @@
-var config = require("../config.json");
+var AVAILABLE_PREPROCESSORS = {
+    stylus: "styl",
+        less: "less",
+        sass: ["scss", "sass"]
+};
+var THEME_PATH = "../wp-content/themes/bienen";
+var THEME_DIST = "./theme";
+var IGNORED_FOLDERS = ["js", "css"];
 
-var themePath = "../wp-content/themes/bienen";
-var themeDist = "./theme";
-var ignoredFolder = ["js", "css"];
+var config = require("../config.json");
+var _ = require('underscore');
+
+var includedCSSPreprocessors = [];
+_.each(config.cssPreProcessors, function(cssPreprocessor) {
+     var prefix = AVAILABLE_PREPROCESSORS[cssPreprocessor];
+     if(prefix) {
+         prefix = _.isArray(prefix) ? prefix : [prefix];
+         includedCSSPreprocessors.push({preProcessor: cssPreprocessor, prefix: prefix});
+     }
+});
 
 module.exports = {
     release: config.release,
-    themeDistributive: themeDist,
+    themeDistributive: THEME_DIST,
     excludeFolders: config.excludeFolders,
-    themePath: themePath,
+    themePath: THEME_PATH,
     css: {
         src: "./theme/css/*.", // +  PREFIX in tasks
-        destination: themePath + "/css",
-        preprocessors: config.cssPreProcessors,
-        AVAILABLE_PREPROCESSORS: {
-            stylus: "styl",
-            less: "less",
-            sass: ["scss", "sass"]
-        }
+        destination: THEME_PATH + "/css",
+        preprocessors: includedCSSPreprocessors
     },
     js: {
         src: "./theme/js/*.js", // +  PREFIX in tasks
-        destination: themePath + "/js",
+        destination: THEME_PATH + "/js",
         concatName: 'main.js'
     },
     browserSync: {
         proxy: config.siteUrl,
         files: [
-            themePath + '/**'
+            THEME_PATH + '/**'
         ]
     }
 };
