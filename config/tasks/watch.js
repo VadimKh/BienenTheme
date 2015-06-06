@@ -25,6 +25,8 @@ gulp.task('watch', ['browserSync'], function () {
     });
 
     gulp.watch(config.js.src, ['scripts']);
+    gulp.watch(config.img.src, ['images']);
+
     gulp.watch(config.themeDistributive + '/*', ['sync']);
     _.each(config.excludeFolders, function(folder) {
         gulp.watch(config.themeDistributive + '/' + folder + '/**/*', ['syncExcludedFolder']);
