@@ -19,5 +19,6 @@ gulp.task('scripts', ['scripts-vendor'], function() {
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(concat(configJs.concatName))
-        .pipe(gulpif(config.release, uglify()));
+        .pipe(gulpif(config.release, uglify()))
+        .pipe(gulp.dest(configJs.destination));
 });
