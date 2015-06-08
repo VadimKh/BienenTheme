@@ -19,7 +19,7 @@ gulp.task('watch', ['browserSync'], function () {
     _.each(config.css.preprocessors, function(preprocessor) {
         var path = [];
         _.each(preprocessor.prefix, function (pref) {
-            path.push(config.css.src + pref);
+            path.push(config.css.distPath + '/**/*.' + pref);
         });
         gulp.watch(path, [preprocessor.preProcessor]);
     });

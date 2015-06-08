@@ -133,10 +133,10 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array());
-    wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.css', array());
+    wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0.0');
+    wp_register_style('foundation', get_template_directory_uri() . '/css/foundation.css', array(), '1.0.0');
     // Custom CSS
-    wp_register_style('bienencss', get_template_directory_uri() . '/css/main.css', array('normalize', 'foundation'));
+    wp_register_style('bienencss', get_template_directory_uri() . '/css/main.css', array('normalize', 'foundation'), '1.0.0');
 
     // Register CSS
     wp_enqueue_style('bienencss');

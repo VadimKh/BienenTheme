@@ -20,7 +20,6 @@ _.each(preprocessors, function(preprocessor) {
     });
 
     gulp.task(compilerName, function () {
-        console.log(arguments);
         return gulp.src(path)
             .pipe(sourcemaps.init())
             .pipe(compiler())
