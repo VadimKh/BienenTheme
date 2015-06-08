@@ -24,7 +24,9 @@ module.exports = {
     themeDistributive: THEME_DIST,
     excludeFolders: config.excludeFolders,
     themePath: THEME_PATH,
+    functionPath: THEME_DIST + '/functions.php',
     css: {
+        distPath: THEME_DIST + "/css",
         src: THEME_DIST + "/css/*.", // +  PREFIX in tasks
         destination: THEME_PATH + "/css",
         preprocessors: includedCSSPreprocessors
@@ -33,6 +35,10 @@ module.exports = {
         src: THEME_DIST + "/js/*.js", // +  PREFIX in tasks
         destination: THEME_PATH + "/js",
         concatName: 'main.js'
+    },
+    foundation: {
+        src: 'js/vendors',
+        scssSrc: '/foundation/scss/**/*.scss'
     },
     img: {
         src: [THEME_DIST + '/**/*.png', THEME_DIST + '/**/*.jpg', THEME_DIST + '/**/*.jpeg', THEME_DIST + '/**/*.gif'],

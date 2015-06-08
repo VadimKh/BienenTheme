@@ -1,5 +1,8 @@
 src
 .idea
 node_modules
-wp-content
 bower_components
+theme/js/vendors
+theme/css/foundation
+theme/css/foundation.scss
+theme/css/normalize.scss

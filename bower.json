@@ -5,6 +5,7 @@
   "authors": [
     "Vadim <12h@bk.ru>"
   ],
+  "directory": "./bower_components",
   "license": "MIT",
   "ignore": [
     "**/.*",
