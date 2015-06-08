@@ -21,14 +21,17 @@ gulp.task('watch', ['browserSync'], function () {
         _.each(preprocessor.prefix, function (pref) {
             path.push(config.css.distPath + '/**/*.' + pref);
         });
-        gulp.watch(path, [preprocessor.preProcessor]);
+
+        watch(path, function(){
+            gulp.start([preprocessor.preProcessor]);
+        });
     });
 
-    gulp.watch(config.js.src, ['scripts']);
-    gulp.watch(config.img.src, ['images']);
+    watch(config.js.src, function(){ gulp.start(['scripts']) });
+    watch(config.img.src, function(){ gulp.start(['images']) });
 
-    gulp.watch(config.themeDistributive + '/*', ['sync']);
+    watch(config.themeDistributive + '/*', function(){ gulp.start(['sync']) });
     _.each(config.excludeFolders, function(folder) {
-        gulp.watch(config.themeDistributive + '/' + folder + '/**/*', ['syncExcludedFolder']);
+        watch(config.themeDistributive + '/' + folder + '/**/*', function(){ gulp.start(['syncExcludedFolder']) });
     });
 });
