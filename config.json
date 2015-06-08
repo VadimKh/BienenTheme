@@ -1,5 +1,5 @@
 {
-  "release": false,
+  "release": true,
   "siteUrl": "http://examp.le/",
   "cssPreProcessors": [
     "stylus",

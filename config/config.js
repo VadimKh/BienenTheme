@@ -32,7 +32,7 @@ module.exports = {
         preprocessors: includedCSSPreprocessors
     },
     js: {
-        src: THEME_DIST + "/js/*.js", // +  PREFIX in tasks
+        src: THEME_DIST + "/js", // +  PREFIX in tasks
         destination: THEME_PATH + "/js",
         concatName: 'main.js'
     },
