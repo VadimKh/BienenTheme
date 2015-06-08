@@ -40,7 +40,7 @@ gulp.task('foundation-scripts', ['foundation-install'], function(){
 
 gulp.task('foundation-scss', ['foundation-scripts'], function(){
     gulp.src(BOWER_DIRECTORY + config.foundation.scssSrc)
-        .pipe(gulp.dest(config.css.distPath));
+        .pipe(gulp.dest(config.css.distPath + '/foundation'));
 });
 
 gulp.task('foundation', ['foundation-scss']);
