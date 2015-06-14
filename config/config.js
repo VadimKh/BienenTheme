@@ -46,6 +46,13 @@ module.exports = {
         optimizationLevel: 7,
         interlaced: true
     },
+    localization: {
+        src: THEME_DIST + '/languages',
+        localizationFiles: THEME_DIST + '/*.php',
+        mainFile: 'bienen.json',
+        mainFileName: 'bienen',
+        destination: THEME_PATH + '/languages'
+    },
     browserSync: {
         proxy: config.siteUrl,
         files: [
