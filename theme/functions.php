@@ -143,9 +143,9 @@ function html5blank_styles()
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'header-menu' => __('Header Menu', 'bienen'), // Main Navigation
+        'sidebar-menu' => __('Sidebar Menu', 'bienen'), // Sidebar Navigation
+        'extra-menu' => __('Extra Menu', 'bienen') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
 
@@ -198,8 +198,8 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 1', 'bienen'),
+        'description' => __('Description for this widget-area...', 'bienen'),
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -209,8 +209,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 2', 'bienen'),
+        'description' => __('Description for this widget-area...', 'bienen'),
         'id' => 'widget-area-2',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -275,7 +275,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'bienen') . '</a>';
 }
 
 // Remove Admin bar
@@ -336,7 +336,7 @@ function html5blankcomments($comment, $args, $depth)
     <?php endif; ?>
     <div class="comment-author vcard">
     <?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-    <?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
+    <?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>', 'bienen'), get_comment_author_link()) ?>
     </div>
 <?php if ($comment->comment_approved == '0') : ?>
     <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
@@ -345,7 +345,7 @@ function html5blankcomments($comment, $args, $depth)
 
     <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
         <?php
-            printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
+            printf( __('%1$s at %2$s', 'bienen'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)', 'bienen'),'  ','' );
         ?>
     </div>
 
@@ -423,18 +423,18 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('HTML5 Blank Custom Post', 'bienen'), // Rename these to suit
+            'singular_name' => __('HTML5 Blank Custom Post', 'bienen'),
+            'add_new' => __('Add New', 'bienen'),
+            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'bienen'),
+            'edit' => __('Edit', 'bienen'),
+            'edit_item' => __('Edit HTML5 Blank Custom Post', 'bienen'),
+            'new_item' => __('New HTML5 Blank Custom Post', 'bienen'),
+            'view' => __('View HTML5 Blank Custom Post', 'bienen'),
+            'view_item' => __('View HTML5 Blank Custom Post', 'bienen'),
+            'search_items' => __('Search HTML5 Blank Custom Post', 'bienen'),
+            'not_found' => __('No HTML5 Blank Custom Posts found', 'bienen'),
+            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'bienen')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
