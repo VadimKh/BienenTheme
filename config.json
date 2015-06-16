@@ -6,6 +6,5 @@
     "sass"
   ],
   "excludeFolders": [
-    "js/vendors"
   ]
 }
