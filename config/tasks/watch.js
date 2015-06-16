@@ -34,4 +34,6 @@ gulp.task('watch', ['browserSync'], function () {
     _.each(config.excludeFolders, function(folder) {
         watch(config.themeDistributive + '/' + folder + '/**/*', function(){ gulp.start(['syncExcludedFolder']) });
     });
+    //watch([config.localization.localizationFiles], function(){ gulp.start(['localization-update'])});
+    watch([config.localization.src + '/*.json'], function(){ gulp.start(['localization-compile'])});
 });

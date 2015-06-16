@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var config = require('../config');
+var locConfig = config.localization;
 var path = require('path');
 var _ = require('underscore');
 var through = require('through2');
@@ -59,7 +60,35 @@ gulp.task('generate-pot', function(){
 
 gulp.task('create-localization-template', ['generate-pot'], function() {
     return gulp.src(config.localization.src + '/' + config.localization.mainFile)
-        .pipe(jeditor({ template: localizations}))
+        .pipe(jeditor(function(json){
+            json.template = localizations;
+            return json;
+        }))
         .pipe(gulp.dest(config.localization.src));
 });
 
+
+
+var template;
+gulp.task('localization-read-template', ['create-localization-template'], function(){
+    template = null;
+    return  gulp.src(locConfig.src + '/' + locConfig.mainFile)
+        .pipe(jeditor(function(json){
+            template = json.template;
+            return json;
+        }));
+});
+
+gulp.task('localization-update', ['localization-read-template'], function(){
+    return gulp.src([locConfig.src + '/*.json', '!' + locConfig.src + '/' + locConfig.mainFile])
+        .pipe(jeditor(function(json){
+            return _.map(template, function(localization) {
+                var oldLocalization = _.find(json, function(oldLocalization){ return localization.msgid == oldLocalization.msgid});
+                if(oldLocalization) {
+                    localization.msgstr = oldLocalization.msgstr;
+                }
+                return localization;
+            });
+        }))
+        .pipe(gulp.dest(locConfig.src));
+});

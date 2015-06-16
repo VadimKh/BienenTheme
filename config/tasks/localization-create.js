@@ -9,7 +9,7 @@ var gcallback = require('gulp-callback');
 var _ = require('underscore');
 _.mixin( require('underscore.deferred') );
 
-gulp.task('loc-update', function(name) {
+gulp.task('localization-create', function(name) {
     var fileName = locConfig.src + '/' + name + '.json';
     var deferred = _.Deferred();
 

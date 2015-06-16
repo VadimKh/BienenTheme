@@ -23,7 +23,6 @@ var templateToString = function(templates){
 gulp.task('localization-compile-pot', function(){
     gulp.src(locConfig.src + '/' + locConfig.mainFile)
         .pipe(jeditor(function(json){
-            //console.log(templateToString(json.template));
             createFile(locConfig.mainFileName + '.pot', templateToString(json.template))
                 .pipe(gulp.dest(locConfig.destination));
             return json;
@@ -43,3 +42,5 @@ gulp.task('localization-compile-po', function(){
            cb(null, file);
        }));
 });
+
+gulp.task('localization-compile',['localization-compile-pot', 'localization-compile-po']);

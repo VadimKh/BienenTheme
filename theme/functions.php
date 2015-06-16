@@ -51,7 +51,7 @@ if (function_exists('add_theme_support'))
     add_theme_support('automatic-feed-links');
 
     // Localisation Support
-    load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+    load_theme_textdomain('bienen', get_template_directory() . '/languages');
 }
 
 /*------------------------------------*\

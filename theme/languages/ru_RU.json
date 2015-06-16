@@ -3,31 +3,31 @@
     "..\\404.php:9"
   ],
   "msgid": "Page not found",
-  "msgstr": "Hren"
+  "msgstr": "Страница не найдена"
 }, {
   "files": [
     "..\\404.php:11"
   ],
   "msgid": "Return home?",
-  "msgstr": "Morj"
+  "msgstr": "Вернуться домой?"
 }, {
   "files": [
     "..\\archive.php:6"
   ],
   "msgid": "Archives",
-  "msgstr": ""
+  "msgstr": "Архивы"
 }, {
   "files": [
     "..\\author.php:8"
   ],
   "msgid": "Author Archives for ",
-  "msgstr": ""
+  "msgstr": "Архивы для автора "
 }, {
   "files": [
     "..\\author.php:14"
   ],
   "msgid": "About ",
-  "msgstr": ""
+  "msgstr": "О "
 }, {
   "files": [
     "..\\author.php:45",
@@ -35,7 +35,7 @@
     "..\\single.php:31"
   ],
   "msgid": "Published by",
-  "msgstr": ""
+  "msgstr": "Автор "
 }, {
   "files": [
     "..\\author.php:46",
@@ -43,7 +43,7 @@
     "..\\single.php:32"
   ],
   "msgid": "Leave your thoughts",
-  "msgstr": ""
+  "msgstr": "Оставтье ваши комментарии"
 }, {
   "files": [
     "..\\author.php:46",
@@ -51,7 +51,7 @@
     "..\\single.php:32"
   ],
   "msgid": "1 Comment",
-  "msgstr": ""
+  "msgstr": "1 Комментарий"
 }, {
   "files": [
     "..\\author.php:46",
@@ -59,7 +59,7 @@
     "..\\single.php:32"
   ],
   "msgid": "% Comments",
-  "msgstr": ""
+  "msgstr": "% Комментариев"
 }, {
   "files": [
     "..\\author.php:65",
@@ -69,49 +69,49 @@
     "..\\template-demo.php:31"
   ],
   "msgid": "Sorry, nothing to display.",
-  "msgstr": ""
+  "msgstr": "Извините, ничего не найдено"
 }, {
   "files": [
     "..\\category.php:6"
   ],
   "msgid": "Category: ",
-  "msgstr": ""
+  "msgstr": "Категория: "
 }, {
   "files": [
     "..\\comments.php:2"
   ],
   "msgid": "Post is password protected. Enter the password to view any comments.",
-  "msgstr": ""
+  "msgstr": "Пост защищен паролем. Пожалуйста, введите пароль чтобы просмотреть комментарии."
 }, {
   "files": [
     "..\\comments.php:17"
   ],
   "msgid": "Comments are closed here.",
-  "msgstr": ""
+  "msgstr": "Комментарии отключены."
 }, {
   "files": [
     "..\\footer.php:5"
   ],
   "msgid": "Powered by",
-  "msgstr": ""
+  "msgstr": "Разработанно "
 }, {
   "files": [
     "..\\functions.php:145"
   ],
   "msgid": "Header Menu",
-  "msgstr": ""
+  "msgstr": "Главное меню"
 }, {
   "files": [
     "..\\functions.php:146"
   ],
   "msgid": "Sidebar Menu",
-  "msgstr": ""
+  "msgstr": "Боковое меню"
 }, {
   "files": [
     "..\\functions.php:147"
   ],
   "msgid": "Extra Menu",
-  "msgstr": ""
+  "msgstr": "Дополнительное меню"
 }, {
   "files": [
     "..\\functions.php:200"
@@ -228,7 +228,7 @@
     "..\\index.php:6"
   ],
   "msgid": "Latest Posts",
-  "msgstr": ""
+  "msgstr": "Последние записи"
 }, {
   "files": [
     "..\\search.php:6"
