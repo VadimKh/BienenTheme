@@ -96,130 +96,130 @@
   "msgstr": "Разработанно "
 }, {
   "files": [
-    "..\\functions.php:145"
+    "..\\functions.php:108"
   ],
   "msgid": "Header Menu",
   "msgstr": "Главное меню"
 }, {
   "files": [
-    "..\\functions.php:146"
+    "..\\functions.php:109"
   ],
   "msgid": "Sidebar Menu",
   "msgstr": "Боковое меню"
 }, {
   "files": [
-    "..\\functions.php:147"
+    "..\\functions.php:110"
   ],
   "msgid": "Extra Menu",
   "msgstr": "Дополнительное меню"
 }, {
   "files": [
-    "..\\functions.php:200"
+    "..\\functions.php:163"
   ],
   "msgid": "Widget Area 1",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:201",
-    "..\\functions.php:212"
+    "..\\functions.php:164",
+    "..\\functions.php:175"
   ],
   "msgid": "Description for this widget-area...",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:211"
+    "..\\functions.php:174"
   ],
   "msgid": "Widget Area 2",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:277"
+    "..\\functions.php:240"
   ],
   "msgid": "View Article",
   "msgstr": "Просмотреть статью"
 }, {
   "files": [
-    "..\\functions.php:338"
+    "..\\functions.php:301"
   ],
   "msgid": "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:341"
+    "..\\functions.php:304"
   ],
   "msgid": "Your comment is awaiting moderation.",
   "msgstr": "Ваш комментарий ждет модерации."
 }, {
   "files": [
-    "..\\functions.php:347"
+    "..\\functions.php:310"
   ],
   "msgid": "%1$s at %2$s",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:347"
+    "..\\functions.php:310"
   ],
   "msgid": "(Edit)",
   "msgstr": "(Редактировать)"
 }, {
   "files": [
-    "..\\functions.php:425",
-    "..\\functions.php:426"
+    "..\\functions.php:388",
+    "..\\functions.php:389"
   ],
   "msgid": "HTML5 Blank Custom Post",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:427"
+    "..\\functions.php:390"
   ],
   "msgid": "Add New",
   "msgstr": "Добавить новый"
 }, {
   "files": [
-    "..\\functions.php:428"
+    "..\\functions.php:391"
   ],
   "msgid": "Add New HTML5 Blank Custom Post",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:429"
+    "..\\functions.php:392"
   ],
   "msgid": "Edit",
   "msgstr": "Редактировать"
 }, {
   "files": [
-    "..\\functions.php:430"
+    "..\\functions.php:393"
   ],
   "msgid": "Edit HTML5 Blank Custom Post",
   "msgstr": "Редактировать Html5 blank Custom Post"
 }, {
   "files": [
-    "..\\functions.php:431"
+    "..\\functions.php:394"
   ],
   "msgid": "New HTML5 Blank Custom Post",
   "msgstr": "Новый HTML5 Blank Custom Post"
 }, {
   "files": [
-    "..\\functions.php:432",
-    "..\\functions.php:433"
+    "..\\functions.php:395",
+    "..\\functions.php:396"
   ],
   "msgid": "View HTML5 Blank Custom Post",
   "msgstr": "Просмотреть HTML5 Blank Custom Post"
 }, {
   "files": [
-    "..\\functions.php:434"
+    "..\\functions.php:397"
   ],
   "msgid": "Search HTML5 Blank Custom Post",
   "msgstr": ""
 }, {
   "files": [
-    "..\\functions.php:435"
+    "..\\functions.php:398"
   ],
   "msgid": "No HTML5 Blank Custom Posts found",
   "msgstr": "HTML5 Blank Custom Post не найдены"
 }, {
   "files": [
-    "..\\functions.php:436"
+    "..\\functions.php:399"
   ],
   "msgid": "No HTML5 Blank Custom Posts found in Trash",
   "msgstr": ""

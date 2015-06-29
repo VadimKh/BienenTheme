@@ -23,7 +23,7 @@
 				<?php the_date(); ?> <?php the_time(); ?>
 			</time>
 		</span>
-		<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+		<span class="author"><?php _e( 'Published by', 'bienen' ); ?> <?php the_author_posts_link(); ?></span>
 		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'bienen' ), __( '1 Comment', 'bienen' ), __( '% Comments', 'bienen' )); ?></span>
 		<!-- /post details -->
 
