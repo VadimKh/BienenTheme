@@ -3,9 +3,15 @@ var _ = require('underscore');
 var watch = require('gulp-watch');
 var config = require('../config');
 
+var excludedFolderSync = [];
+
+_.each(config.excludeFolders, function(folder) {
+    excludedFolderSync.push(config.themeDistributive + '/' + folder + '/*');
+});
+
 gulp.task('syncExcludedFolder', function(){
     _.each(config.excludeFolders, function(folder) {
-        gulp.src(config.themeDistributive + '/' + folder + '/**/*').pipe(gulp.dest(config.themePath + '/' + folder));
+        gulp.src(config.themeDistributive + '/' + folder + '/*').pipe(gulp.dest(config.themePath + '/' + folder));
     });
 });
 
@@ -31,9 +37,8 @@ gulp.task('watch', ['browserSync'], function () {
     watch(config.img.src, function(){ gulp.start(['images']) });
 
     watch(config.themeDistributive + '/*', function(){ gulp.start(['sync']) });
-    _.each(config.excludeFolders, function(folder) {
-        watch(config.themeDistributive + '/' + folder + '/**/*', function(){ gulp.start(['syncExcludedFolder']) });
-    });
+
+    watch(excludedFolderSync, function(){ gulp.start(['syncExcludedFolder']) });
     //watch([config.localization.localizationFiles], function(){ gulp.start(['localization-update'])});
     watch([config.localization.src + '/*.json'], function(){ gulp.start(['localization-compile'])});
 });

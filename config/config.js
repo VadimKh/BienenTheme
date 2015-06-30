@@ -19,6 +19,11 @@ _.each(config.cssPreProcessors, function(cssPreprocessor) {
      }
 });
 
+var localizationFiles = [THEME_DIST + '/*.php'];
+_.each(config.excludeFolders, function(folder){
+    localizationFiles.push(THEME_DIST + '/' + folder + '/*.php')
+});
+
 module.exports = {
     release: config.release,
     themeDistributive: THEME_DIST,
@@ -48,7 +53,7 @@ module.exports = {
     },
     localization: {
         src: THEME_DIST + '/languages',
-        localizationFiles: THEME_DIST + '/*.php',
+        localizationFiles: localizationFiles,
         mainFile: 'bienen.json',
         mainFileName: 'bienen',
         destination: THEME_PATH + '/languages'
