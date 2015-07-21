@@ -3,6 +3,6 @@ src
 node_modules
 bower_components
 theme/js/vendors
-theme/css/foundation
+theme/css/vendors
 theme/css/foundation.scss
 theme/css/normalize.scss
