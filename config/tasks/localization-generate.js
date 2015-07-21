@@ -7,7 +7,7 @@ var through = require('through2');
 var jeditor = require("gulp-json-editor");
 
 var localizationsInStroke = function(stroke, spliter) {
-    var regExprLocalization = new RegExp("[\\s(](__|_e|_x|_ex|_n|_en)\\s*\\(\\s*" + spliter + "([^" + spliter + "]*)" + spliter, "g");
+    var regExprLocalization = new RegExp("[\\s(.](__|_e|_x|_ex|_n|_en)\\s*\\(\\s*" + spliter + "([^" + spliter + "]*)" + spliter + "\\s*,\\s*" + spliter + "bienen" + spliter, "g");
     var regExpLocal = new RegExp(spliter + "([^" + spliter + "]*)" + spliter, "");
 
     var matchesResult = stroke.match(regExprLocalization);

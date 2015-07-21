@@ -7,14 +7,14 @@
             <!-- copyright -->
             <div class="row">
                 <div class="copyright column small-8 text-center">
-                    <?php echo '© 2015 Bohemia';?>
+                    <?php echo '© 2015' + get_bloginfo('name');?>
                 </div>
                 <div class="designed-by column small-4">
                     <?php  _e("Designed by:  <a href='http://bienen.ru/' title='Bienen'>Bienen</a>", 'bienen');?>
                 </div>
             </div>
             <!-- /copyright -->
-
+            <!-- /copyright -->
         </footer>
         <!-- /footer -->
 

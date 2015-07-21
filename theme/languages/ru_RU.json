@@ -1,78 +1,77 @@
 [{
   "files": [
-    "..\\404.php:9"
+    "..\\404.php:8"
   ],
   "msgid": "Page not found",
   "msgstr": "Страница не найдена"
 }, {
   "files": [
-    "..\\404.php:11"
+    "..\\404.php:10"
   ],
   "msgid": "Return home?",
   "msgstr": "Вернуться домой?"
 }, {
   "files": [
-    "..\\archive.php:6"
+    "..\\archive.php:5"
   ],
   "msgid": "Archives",
   "msgstr": "Архивы"
 }, {
   "files": [
-    "..\\author.php:8"
+    "..\\author.php:7"
   ],
   "msgid": "Author Archives for ",
   "msgstr": "Архивы для автора "
 }, {
   "files": [
-    "..\\author.php:14"
+    "..\\author.php:13"
   ],
   "msgid": "About ",
   "msgstr": "О "
 }, {
   "files": [
-    "..\\author.php:45",
+    "..\\author.php:44",
     "..\\loop.php:25",
-    "..\\single.php:31"
+    "..\\single.php:30"
   ],
   "msgid": "Published by",
   "msgstr": "Автор "
 }, {
   "files": [
-    "..\\author.php:46",
+    "..\\author.php:45",
     "..\\loop.php:26",
-    "..\\single.php:32"
+    "..\\single.php:31"
   ],
   "msgid": "Leave your thoughts",
   "msgstr": "Оставтье ваши комментарии"
 }, {
   "files": [
-    "..\\author.php:46",
+    "..\\author.php:45",
     "..\\loop.php:26",
-    "..\\single.php:32"
+    "..\\single.php:31"
   ],
   "msgid": "1 Comment",
   "msgstr": "1 Комментарий"
 }, {
   "files": [
-    "..\\author.php:46",
+    "..\\author.php:45",
     "..\\loop.php:26",
-    "..\\single.php:32"
+    "..\\single.php:31"
   ],
   "msgid": "% Comments",
   "msgstr": "% Комментариев"
 }, {
   "files": [
-    "..\\author.php:65",
+    "..\\author.php:64",
     "..\\loop.php:42",
-    "..\\page.php:31",
-    "..\\single.php:57",
-    "..\\template-demo.php:31"
+    "..\\page.php:30",
+    "..\\single.php:56"
   ],
   "msgid": "Sorry, nothing to display.",
   "msgstr": "Извините, ничего не найдено"
 }, {
   "files": [
-    "..\\category.php:6"
+    "..\\category.php:5"
   ],
   "msgid": "Category: ",
   "msgstr": "Категория: "
@@ -90,19 +89,13 @@
   "msgstr": "Комментарии отключены."
 }, {
   "files": [
-    "..\\footer.php:5"
-  ],
-  "msgid": "Powered by",
-  "msgstr": "Разработанно "
-}, {
-  "files": [
-    "..\\index.php:6"
+    "..\\index.php:5"
   ],
   "msgid": "Latest Posts",
   "msgstr": "Последние записи"
 }, {
   "files": [
-    "..\\search.php:6"
+    "..\\search.php:5"
   ],
   "msgid": "%s Search Results for ",
   "msgstr": "%s Результаты поиска по запросу  "
@@ -120,28 +113,90 @@
   "msgstr": "Поиск"
 }, {
   "files": [
-    "..\\single.php:37"
+    "..\\single.php:36"
   ],
   "msgid": "Tags: ",
   "msgstr": "Тэги: "
 }, {
   "files": [
-    "..\\single.php:39"
+    "..\\single.php:38"
   ],
   "msgid": "Categorised in: ",
   "msgstr": "Находится в категориях: "
 }, {
   "files": [
-    "..\\single.php:41"
+    "..\\single.php:40"
   ],
   "msgid": "This post was written by ",
   "msgstr": "Этот пост был написан "
 }, {
   "files": [
-    "..\\tag.php:6"
+    "..\\tag.php:5"
   ],
   "msgid": "Tag Archive: ",
   "msgstr": "Архив тэгов"
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:8",
+    "..\\library\\custom-posts.php:9"
+  ],
+  "msgid": "HTML5 Blank Custom Post",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:10"
+  ],
+  "msgid": "Add New",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:11"
+  ],
+  "msgid": "Add New HTML5 Blank Custom Post",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:12"
+  ],
+  "msgid": "Edit",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:13"
+  ],
+  "msgid": "Edit HTML5 Blank Custom Post",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:14"
+  ],
+  "msgid": "New HTML5 Blank Custom Post",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:15",
+    "..\\library\\custom-posts.php:16"
+  ],
+  "msgid": "View HTML5 Blank Custom Post",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:17"
+  ],
+  "msgid": "Search HTML5 Blank Custom Post",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:18"
+  ],
+  "msgid": "No HTML5 Blank Custom Posts found",
+  "msgstr": ""
+}, {
+  "files": [
+    "..\\library\\custom-posts.php:19"
+  ],
+  "msgid": "No HTML5 Blank Custom Posts found in Trash",
+  "msgstr": ""
 }, {
   "files": [
     "..\\library\\navigation.php:10"
@@ -150,13 +205,13 @@
   "msgstr": ""
 }, {
   "files": [
-    "..\\library\\widgets.php:5"
+    "..\\library\\widgets.php:6"
   ],
   "msgid": "Search Widget",
   "msgstr": "Виджет поиска"
 }, {
   "files": [
-    "..\\library\\widgets.php:6"
+    "..\\library\\widgets.php:7"
   ],
   "msgid": "Put search widget here...",
   "msgstr": ""
@@ -172,12 +227,6 @@
   ],
   "msgid": "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>",
   "msgstr": ""
-}, {
-  "files": [
-    "..\\library\\theme\\custom.php:70"
-  ],
-  "msgid": "Your comment is awaiting moderation.",
-  "msgstr": "Ваш комментарий ждет модерации."
 }, {
   "files": [
     "..\\library\\theme\\custom.php:76"
