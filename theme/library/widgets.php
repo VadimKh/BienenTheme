@@ -1,5 +1,6 @@
 <?php
 // If Dynamic Sidebar Exists
+//if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('search-widget'))
 if (function_exists('register_sidebar'))
 {
     register_sidebar(array(
