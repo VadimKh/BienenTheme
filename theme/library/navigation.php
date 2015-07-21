@@ -8,53 +8,29 @@
  */
 
 register_nav_menus(array(
-    'top-bar-l' => 'Left Top Bar',// Registers the menu in the WordPress admin menu editor.
-    'top-bar-r' => 'Right Top Bar',
+    'bienen_top_bar' => __('Navigation', 'bienen')// Registers the menu in the WordPress admin menu editor.
     //'mobile-off-canvas' => 'Mobile',
 ));
-
 
 /**
  * Left top bar
  * http://codex.wordpress.org/Function_Reference/wp_nav_menu
  */
-if ( ! function_exists( 'foundationpress_top_bar_l' ) ) {
-    function foundationpress_top_bar_l() {
+if ( ! function_exists( 'bienen_top_bar' ) ) {
+    function bienen_top_bar() {
         wp_nav_menu(array(
             'container' => false,                           // Remove nav container
             'container_class' => '',                        // Class of container
             'menu' => '',                                   // Menu name
-            'menu_class' => 'top-bar-menu left',            // Adding custom nav class
-            'theme_location' => 'top-bar-l',                // Where it's located in the theme
+            'menu_class' => 'top-bar-menu center',            // Adding custom nav class
+            'theme_location' => 'bienen_top_bar',                // Where it's located in the theme
             'before' => '',                                 // Before each link <a>
             'after' => '',                                  // After each link </a>
             'link_before' => '',                            // Before each link text
             'link_after' => '',                             // After each link text
             'depth' => 5,                                   // Limit the depth of the nav
             'fallback_cb' => false,                         // Fallback function (see below)
-            'walker' => new Foundationpress_Top_Bar_Walker(),
-        ));
-    }
-}
-
-/**
- * Right top bar
- */
-if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
-    function foundationpress_top_bar_r() {
-        wp_nav_menu(array(
-            'container' => false,                           // Remove nav container
-            'container_class' => '',                        // Class of container
-            'menu' => '',                                   // Menu name
-            'menu_class' => 'top-bar-menu right',           // Adding custom nav class
-            'theme_location' => 'top-bar-r',                // Where it's located in the theme
-            'before' => '',                                 // Before each link <a>
-            'after' => '',                                  // After each link </a>
-            'link_before' => '',                            // Before each link text
-            'link_after' => '',                             // After each link text
-            'depth' => 5,                                   // Limit the depth of the nav
-            'fallback_cb' => false,                         // Fallback function (see below)
-            'walker' => new Foundationpress_Top_Bar_Walker(),
+            'walker' => new Bienen_Top_Bar_Walker(),
         ));
     }
 }
@@ -62,8 +38,8 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 /**
  * Mobile off-canvas
  */
-/*if ( ! function_exists( 'foundationpress_mobile_off_canvas' ) ) {
-    function foundationpress_mobile_off_canvas() {
+/*if ( ! function_exists( 'bienen_mobile_off_canvas' ) ) {
+    function bienen_mobile_off_canvas() {
         wp_nav_menu(array(
             'container' => false,                           // Remove nav container
             'container_class' => '',                        // Class of container
@@ -76,7 +52,7 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
             'link_after' => '',                             // After each link text
             'depth' => 5,                                   // Limit the depth of the nav
             'fallback_cb' => false,                         // Fallback function (see below)
-            'walker' => new Foundationpress_Offcanvas_Walker(),
+            'walker' => new Bienen_Top_Bar_Walker(),
         ));
     }
 }*/
@@ -88,18 +64,18 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
  * 3) On your menu item, type 'has-form' in the CSS-classes field. Type 'button' in the XFN field
  * 4) Save Menu. Your menu item will now appear as a button in your top-menu
  */
-if ( ! function_exists( 'foundationpress_add_menuclass' ) ) {
-    function foundationpress_add_menuclass($ulclass) {
+if ( ! function_exists( 'bienen_add_menuclass' ) ) {
+    function bienen_add_menuclass($ulclass) {
         $find = array('/<a rel="button"/', '/<a title=".*?" rel="button"/');
         $replace = array('<a rel="button" class="button"', '<a rel="button" class="button"');
 
         return preg_replace( $find, $replace, $ulclass, 1 );
     }
-    add_filter( 'wp_nav_menu','foundationpress_add_menuclass' );
+    add_filter( 'wp_nav_menu','bienen_add_menuclass' );
 }
 
-if ( ! class_exists( 'Foundationpress_Top_Bar_Walker' ) ) :
-    class Foundationpress_Top_Bar_Walker extends Walker_Nav_Menu {
+if ( ! class_exists( 'Bienen_Top_Bar_Walker' ) ) :
+    class Bienen_Top_Bar_Walker extends Walker_Nav_Menu {
 
         function display_element( $element, &$children_elements, $max_depth, $depth = 0, $args, &$output ) {
             $element->has_children = ! empty( $children_elements[ $element->ID ] );
@@ -113,7 +89,7 @@ if ( ! class_exists( 'Foundationpress_Top_Bar_Walker' ) ) :
             $item_html = '';
             parent::start_el( $item_html, $object, $depth, $args );
 
-            $output .= ( 0 == $depth ) ? '<li class="divider"></li>' : '';
+            $output .= ( 0 == $depth ) && !empty($output)  ? '<li class="divider"></li>' : '';
 
             $classes = empty( $object->classes ) ? array() : (array) $object->classes;
 
@@ -133,5 +109,41 @@ if ( ! class_exists( 'Foundationpress_Top_Bar_Walker' ) ) :
             $output .= "\n<ul class=\"sub-menu dropdown\">\n";
         }
 
+    }
+endif;
+
+
+if ( ! function_exists( 'bienen_pagination' ) ) :
+    function bienen_pagination() {
+        global $wp_query;
+
+        $big = 999999999; // This needs to be an unlikely integer
+
+        // For more options and info view the docs for paginate_links()
+        // http://codex.wordpress.org/Function_Reference/paginate_links
+        $paginate_links = paginate_links( array(
+            'base' => str_replace( $big, '%#%', html_entity_decode( get_pagenum_link( $big ) ) ),
+            'current' => max( 1, get_query_var( 'paged' ) ),
+            'total' => $wp_query->max_num_pages,
+            'mid_size' => 5,
+            'prev_next' => false,
+            'prev_text' => '&laquo;',
+            'next_text' => '&raquo;',
+            'type' => 'list',
+        ) );
+
+        $paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
+        $paginate_links = str_replace( '<li><span class="page-numbers dots">', "<li><a href='#'>", $paginate_links );
+        $paginate_links = str_replace( "<li><span class='page-numbers current'>", "<li class='current'><a href='#'>", $paginate_links );
+        $paginate_links = str_replace( '</span>', '</a>', $paginate_links );
+        $paginate_links = str_replace( "<li><a href='#'>&hellip;</a></li>", "<li><span class='dots'>&hellip;</span></li>", $paginate_links );
+        $paginate_links = preg_replace( '/\s*page-numbers/', '', $paginate_links );
+
+        // Display the pagination if more than one page is found.
+        if ( $paginate_links ) {
+            echo '<div class="pagination-right">';
+            echo $paginate_links;
+            echo '</div><!--// end .pagination -->';
+        }
     }
 endif;

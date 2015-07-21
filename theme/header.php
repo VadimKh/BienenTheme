@@ -30,13 +30,6 @@
 						</a>
 					</div>
 					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
 			</header>
 			<!-- /header -->
             <div class="top-bar-container contain-to-grid">
@@ -47,8 +40,7 @@
                         </li>
                     </ul>
                     <section class="top-bar-section">
-                        <?php foundationpress_top_bar_l(); ?>
-                        <?php foundationpress_top_bar_r(); ?>
+                        <?php bienen_top_bar(); ?>
                     </section>
                 </nav>
             </div>

@@ -41,7 +41,9 @@ module.exports = {
         destination: THEME_PATH + "/js",
         concatName: 'main.js'
     },
-    foundation: {
+    bower: {
+        functionPath: THEME_DIST + '/library',
+        functionScriptsPath: THEME_DIST + '/library/custom-scripts.php',
         src: 'js/vendors',
         scssSrc: '/foundation/scss/**/*.scss'
     },

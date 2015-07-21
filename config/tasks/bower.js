@@ -10,7 +10,7 @@ gulp.task('bower-install', function(){
 });
 
 gulp.task('bower-scripts', ['bower-install'], function(){
-    var vendorsSrc = config.foundation.src;
+    var vendorsSrc = config.bower.src;
     var themeDist = config.themeDistributive;
 
     var result = bowerFiles();
@@ -19,7 +19,7 @@ gulp.task('bower-scripts', ['bower-install'], function(){
     gulp.src(result)
         .pipe(gulp.dest(themeDist + '/' + vendorsSrc));
 
-    gulp.src(config.functionPath)
+    gulp.src(config.bower.functionScriptsPath)
         .pipe(inject(
             gulp.src(result, {read: false}), {
                 starttag: '/*inject:js*/',
@@ -35,11 +35,11 @@ gulp.task('bower-scripts', ['bower-install'], function(){
                 }
             }
         ))
-        .pipe(gulp.dest(themeDist));
+        .pipe(gulp.dest(config.bower.functionPath));
 });
 
 gulp.task('foundation-scss', ['bower-scripts'], function(){
-    gulp.src(BOWER_DIRECTORY + config.foundation.scssSrc)
+    gulp.src(BOWER_DIRECTORY + config.bower.scssSrc)
         .pipe(gulp.dest(config.css.distPath + '/vendors'));
 });
 
