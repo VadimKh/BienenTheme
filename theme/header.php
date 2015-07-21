@@ -15,32 +15,26 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+        <div class="body-content">
+            <div class="main-content">
+                <!-- header -->
+                <header class="header row" role="banner">
 
-		<!-- wrapper -->
-		<div class="wrapper">
+                        <!-- logo -->
+                        <div class="logo column small-4 small-centered">
+                            <a href="<?php echo home_url(); ?>">
+                                <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+                            </a>
+                        </div>
+                        <!-- /logo -->
+                </header>
+                <!-- /header -->
 
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-			</header>
-			<!-- /header -->
-            <div class="top-bar-container contain-to-grid">
-                <nav class="top-bar" data-topbar role="navigation">
-                    <ul class="title-area">
-                        <li class="name">
-                            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-                        </li>
-                    </ul>
-                    <section class="top-bar-section">
-                        <?php bienen_top_bar(); ?>
-                    </section>
-                </nav>
-            </div>
+                <div class="top-bar-container contain-to-grid row">
+                    <nav class="top-bar column small-12" data-topbar role="navigation">
+                        <section class="top-bar-section">
+                            <?php bienen_top_bar(); ?>
+                        </section>
+                    </nav>
+                </div>

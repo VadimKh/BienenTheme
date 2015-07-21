@@ -1,10 +1,8 @@
 <?php /* Template Name: Обзор всех html элементов */
 get_header(); ?>
-<main>
-    <section class="container" role="document">
-        <div class="row">
-            <div class="small-12 large-12 columns" role="main">
-
+        <main class="row" role="main">
+            <!-- section -->
+            <section class="column small-12">
                 <article class="post-47 page type-page status-publish hentry" id="post-47">
                     <header>
                         <h1 class="entry-title">Kitchen Sink</h1>
@@ -12,7 +10,8 @@ get_header(); ?>
                     <div class="entry-content">
                     </div>
 
-                    <h3 class="subheader">This page includes every single Foundation element so that we can make sure
+                    <h3 class="subheader">This page includes every single Foundation element so that we can make
+                        sure
                         things work together smoothly.</h3>
 
                     <h4 id="alert-boxes">Alert Boxes</h4>
@@ -40,13 +39,17 @@ get_header(); ?>
                     <hr>
                     <h4 id="block-grid">Block Grid</h4>
                     <ul class="small-block-grid-2 large-block-grid-4">
-                        <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/comet-th.jpg"
+                        <li><img class="th"
+                                 src="http://foundation.zurb.com/docs/assets/img/examples/comet-th.jpg"
                                  alt=""></li>
-                        <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/launch-th.jpg"
+                        <li><img class="th"
+                                 src="http://foundation.zurb.com/docs/assets/img/examples/launch-th.jpg"
                                  alt=""></li>
-                        <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/space-th.jpg"
+                        <li><img class="th"
+                                 src="http://foundation.zurb.com/docs/assets/img/examples/space-th.jpg"
                                  alt=""></li>
-                        <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/spacewalk-th.jpg"
+                        <li><img class="th"
+                                 src="http://foundation.zurb.com/docs/assets/img/examples/spacewalk-th.jpg"
                                  alt=""></li>
                     </ul>
 
@@ -112,17 +115,20 @@ get_header(); ?>
                     <a href="#" data-dropdown="drop" class="small secondary radius button dropdown">Dropdown
                         Button</a><br>
                     <a href="#" data-dropdown="drop" class="button alert round dropdown">Dropdown Button</a><br>
-                    <a href="#" data-dropdown="drop" class="large success button dropdown">Dropdown Button</a><br>
+                    <a href="#" data-dropdown="drop" class="large success button dropdown">Dropdown
+                        Button</a><br>
                     <a href="#" data-dropdown="drop" class="large button dropdown expand">Dropdown Button</a>
 
                     <hr>
                     <h4 id="split-buttons">Split Buttons</h4>
 
                     <p>
-                        <a href="#" class="tiny button split">Split Button <span data-dropdown="drop"></span></a><br>
+                        <a href="#" class="tiny button split">Split Button <span
+                                data-dropdown="drop"></span></a><br>
                         <a href="#" class="small secondary radius button split">Split Button <span
                                 data-dropdown="drop"></span></a><br>
-                        <a href="#" class="button alert round split">Split Button <span data-dropdown="drop"></span></a><br>
+                        <a href="#" class="button alert round split">Split Button <span
+                                data-dropdown="drop"></span></a><br>
                         <a href="#" class="large success button split">Split Button <span
                                 data-dropdown="drop"></span></a>
                     </p>
@@ -132,14 +138,17 @@ get_header(); ?>
 
                     <div>
                         <ul class="clearing-thumbs" data-clearing="">
-                            <li><a class="th" href="http://foundation.zurb.com/docs/assets/img/examples/comet.jpg"><img
+                            <li><a class="th"
+                                   href="http://foundation.zurb.com/docs/assets/img/examples/comet.jpg"><img
                                         data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum."
                                         src="http://foundation.zurb.com/docs/assets/img/examples/comet-th-sm.jpg"
                                         alt=""></a></li>
-                            <li><a class="th" href="http://foundation.zurb.com/docs/assets/img/examples/earth.jpg"><img
+                            <li><a class="th"
+                                   href="http://foundation.zurb.com/docs/assets/img/examples/earth.jpg"><img
                                         src="http://foundation.zurb.com/docs/assets/img/examples/earth-th-sm.jpg"
                                         alt=""></a></li>
-                            <li><a class="th" href="http://foundation.zurb.com/docs/assets/img/examples/launch.jpg"><img
+                            <li><a class="th"
+                                   href="http://foundation.zurb.com/docs/assets/img/examples/launch.jpg"><img
                                         data-caption="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
                                         src="http://foundation.zurb.com/docs/assets/img/examples/launch-th-sm.jpg"
                                         alt=""></a></li>
@@ -147,7 +156,8 @@ get_header(); ?>
                                    href="http://foundation.zurb.com/docs/assets/img/examples/satelite.jpg"><img
                                         src="http://foundation.zurb.com/docs/assets/img/examples/satelite-th-sm.jpg"
                                         alt=""></a></li>
-                            <li><a class="th" href="http://foundation.zurb.com/docs/assets/img/examples/space.jpg"><img
+                            <li><a class="th"
+                                   href="http://foundation.zurb.com/docs/assets/img/examples/space.jpg"><img
                                         data-caption="Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
                                         src="http://foundation.zurb.com/docs/assets/img/examples/space-th-sm.jpg"
                                         alt=""></a></li>
@@ -215,7 +225,8 @@ get_header(); ?>
                     <div class="f-dropdown content medium" data-dropdown-content="" id="contentDrop">
                         <h4>Title</h4>
 
-                        <p>Some text that people will think is awesome! Some text that people will think is awesome!
+                        <p>Some text that people will think is awesome! Some text that people will think is
+                            awesome!
                             Some text that people will think is awesome!</p><img
                             src="http://foundation.zurb.com/docs/assets/img/examples/launch.jpg" alt="">
 
@@ -226,7 +237,8 @@ get_header(); ?>
                     <h4 id="flex-video">Flex Video</h4>
 
                     <div class="flex-video">
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/Ogmrl9Yu9sQ" frameborder="0"
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/Ogmrl9Yu9sQ"
+                                frameborder="0"
                                 allowfullscreen=""></iframe>
                     </div>
 
@@ -254,7 +266,8 @@ get_header(); ?>
                             <li data-class="custom so-awesome" data-id="numero1" data-text="Next">
                                 <h4>Stop #1</h4>
 
-                                <p>You can control all the details for you tour stop. Any valid HTML will work inside of
+                                <p>You can control all the details for you tour stop. Any valid HTML will work
+                                    inside of
                                     Joyride.</p>
                             </li>
                             <li data-button="Next" data-id="numero2">
@@ -298,15 +311,19 @@ get_header(); ?>
                     <a name="build"></a>
                     <h5 data-magellan-destination="build">Build With Predefined HTML Structure</h5>
 
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
-                        fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
+                        auctor
+                        fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                        odio
                         sem nec elit. Vestibulum id ligula porta felis euismod semper.</p>
 
                     <a name="js"></a>
                     <h5 data-magellan-destination="js">Awesome JS Goodness</h5>
 
-                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
-                        fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
+                    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
+                        auctor
+                        fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                        odio
                         sem nec elit. Vestibulum id ligula porta felis euismod semper.</p>
 
                     <hr>
@@ -316,8 +333,9 @@ get_header(); ?>
                         <div class="large-12 columns">
                             <ul id="featured1" data-orbit="" data-options="timer_speed:5000;">
                                 <li>
-                                    <img src="http://foundation.zurb.com/docs/assets/img/examples/satelite-orbit.jpg"
-                                         alt="">
+                                    <img
+                                        src="http://foundation.zurb.com/docs/assets/img/examples/satelite-orbit.jpg"
+                                        alt="">
 
                                     <div class="orbit-caption">
                                         Caption One. Pellentesque habitant morbi tristique senectus et netus et
@@ -325,8 +343,9 @@ get_header(); ?>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="http://foundation.zurb.com/docs/assets/img/examples/andromeda-orbit.jpg"
-                                         alt="">
+                                    <img
+                                        src="http://foundation.zurb.com/docs/assets/img/examples/andromeda-orbit.jpg"
+                                        alt="">
 
                                     <div class="orbit-caption">
                                         Caption Two. Pellentesque habitant morbi tristique senectus et netus et
@@ -334,11 +353,13 @@ get_header(); ?>
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="http://foundation.zurb.com/docs/assets/img/examples/launch-orbit.jpg"
-                                         alt="">
+                                    <img
+                                        src="http://foundation.zurb.com/docs/assets/img/examples/launch-orbit.jpg"
+                                        alt="">
 
                                     <div class="orbit-caption">
-                                        Caption Three. Pellentesque habitant morbi tristique senectus et netus et
+                                        Caption Three. Pellentesque habitant morbi tristique senectus et netus
+                                        et
                                         malesuada fames ac turpis egestas.
                                     </div>
                                 </li>
@@ -400,8 +421,10 @@ get_header(); ?>
                     <h4 id="progress-bars">Progress Bars</h4>
 
                     <div class="progress large-6"><span class="meter" style="width: 40%"></span></div>
-                    <div class="radius progress success large-8"><span class="meter" style="width: 80%"></span></div>
-                    <div class="nice round progress alert large-10"><span class="meter" style="width: 30%"></span></div>
+                    <div class="radius progress success large-8"><span class="meter" style="width: 80%"></span>
+                    </div>
+                    <div class="nice round progress alert large-10"><span class="meter"
+                                                                          style="width: 30%"></span></div>
                     <div class="nice secondary progress"><span class="meter" style="width: 50%"></span></div>
 
                     <hr>
@@ -412,11 +435,14 @@ get_header(); ?>
                     <div id="firstModal" class="reveal-modal" data-reveal="">
                         <h2>This is a modal.</h2>
 
-                        <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with
-                            a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere
+                        <p>Reveal makes these very easy to summon and dismiss. The close button is simply an
+                            anchor with
+                            a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking
+                            anywhere
                             outside the modal will also dismiss it.</p>
 
-                        <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you
+                        <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for
+                            you
                             gracefully.</p>
                         <a href="#" data-reveal-id="secondModal" class="secondary button">Second Modal...</a>
                         <a class="close-reveal-modal">×</a>
@@ -434,7 +460,8 @@ get_header(); ?>
                         <h2>This modal has video</h2>
 
                         <div class="flex-video">
-                            <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0"
+                            <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw"
+                                    frameborder="0"
                                     allowfullscreen=""></iframe>
                         </div>
                         <a class="close-reveal-modal">×</a>
@@ -485,7 +512,8 @@ get_header(); ?>
                             <div id="panel2a" class="content">
                                 <div class="row">
                                     <div class="small-6 columns">
-                                        <p>Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        <p>Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do
                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                     <div class="small-6 columns">
@@ -498,8 +526,10 @@ get_header(); ?>
                             <a href="#panel3a">Accordion 3</a>
 
                             <div id="panel3a" class="content">
-                                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </div>
                         </li>
@@ -598,13 +628,17 @@ get_header(); ?>
                         </tr>
                         <tr>
                             <td>Content Goes Here</td>
-                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget
+                                metus.
+                            </td>
                             <td>Content Goes Here</td>
                             <td>Content Goes Here</td>
                         </tr>
                         <tr>
                             <td>Content Goes Here</td>
-                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget
+                                metus.
+                            </td>
                             <td>Content Goes Here</td>
                             <td>Content Goes Here</td>
                         </tr>
@@ -614,22 +648,28 @@ get_header(); ?>
                     <hr>
                     <h4 id="thumbnails">Thumbnails</h4>
 
-                    <p><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/earth-th-sm.jpg" alt=""><img
-                            class="th" src="http://foundation.zurb.com/docs/assets/img/examples/space-th-sm.jpg" alt="">
+                    <p><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/earth-th-sm.jpg"
+                            alt=""><img
+                            class="th" src="http://foundation.zurb.com/docs/assets/img/examples/space-th-sm.jpg"
+                            alt="">
                     </p>
 
                     <hr>
                     <h4 id="tooltips">Tooltips</h4>
 
-                    <p>The tooltips can be positioned on the <span data-tooltip="" class="has-tip" data-width="210"
+                    <p>The tooltips can be positioned on the <span data-tooltip="" class="has-tip"
+                                                                   data-width="210"
                                                                    title="I'm on bottom and the default position.">"tip-bottom"</span>,
                         which is the default position, <span data-tooltip="" class="has-tip tip-top noradius"
                                                              data-width="210"
                                                              title="I'm on the top and I'm not rounded!">"tip-top" (hehe)</span>,
-                        <span data-tooltip="left" class="has-tip tip-left" data-width="90" title="I'm on the left!">"tip-left"</span>,
+                                <span data-tooltip="left" class="has-tip tip-left" data-width="90"
+                                      title="I'm on the left!">"tip-left"</span>,
                         or <span data-tooltip="right" class="has-tip tip-right" data-width="120"
-                                 title="I'm on the right!">"tip-right"</span> of the target element by adding the
-                        appropriate class to them. You can even add your own custom class to style each tip differently.
+                                 title="I'm on the right!">"tip-right"</span> of the target element by adding
+                        the
+                        appropriate class to them. You can even add your own custom class to style each tip
+                        differently.
                         On a small device, the tooltips are full width and bottom aligned.</p>
 
                     <hr>
@@ -765,13 +805,15 @@ get_header(); ?>
                     <h5>Definition lists are great for small block of copy that describe the header</h5>
                     <dl>
                         <dt>Definition List</dt>
-                        <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id
+                        <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id
+                            dolor id
                             nibh ultricies vehicula ut id elit.
                         </dd>
                     </dl>
 
                     <h5>Blockquote</h5>
-                    <blockquote>I do not fear computers. I fear the lack of them. Maecenas faucibus mollis interdum.
+                    <blockquote>I do not fear computers. I fear the lack of them. Maecenas faucibus mollis
+                        interdum.
                         Aenean lacinia bibendum nulla sed consectetur.<cite>Isaac Asimov</cite></blockquote>
 
                     <h5>Vcard</h5>
@@ -806,13 +848,15 @@ get_header(); ?>
 
                     <p class="panel">
                         <strong class="hide-for-small-only">You are <em>not</em> on a small screen.</strong>
-                        <strong class="hide-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge
+                        <strong class="hide-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or
+                            xxlarge
                             screen.</strong>
                         <strong class="hide-for-medium-only">You are <em>not</em> on a medium screen.</strong>
                         <strong class="hide-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge
                             screen.</strong>
                         <strong class="hide-for-large-only">You are <em>not</em> on a large screen.</strong>
-                        <strong class="hide-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+                        <strong class="hide-for-xlarge-up">You are <em>not</em> on an xlarge screen and
+                            up.</strong>
                         <strong class="hide-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
                         <strong class="hide-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
                     </p>
@@ -838,12 +882,7 @@ get_header(); ?>
                     <footer>
                         <p></p>
                     </footer>
-
-
                 </article>
-            </div>
-        </div>
-    </section>
-</main>
-
+            </section>
+        </main>
 <?php get_footer(); ?>

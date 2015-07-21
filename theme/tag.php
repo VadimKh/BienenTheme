@@ -1,8 +1,7 @@
 <?php get_header(); ?>
-
-	<main role="main">
-		<!-- section -->
-		<section>
+    <main class="row" role="main">
+        <!-- section -->
+        <section class="column small-12">
 
 			<h1><?php _e( 'Tag Archive: ', 'bienen' ); echo single_tag_title('', false); ?></h1>
 
@@ -13,5 +12,4 @@
 		</section>
 		<!-- /section -->
 	</main>
-
 <?php get_footer(); ?>

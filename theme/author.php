@@ -1,8 +1,7 @@
 <?php get_header(); ?>
-
-	<main role="main">
-		<!-- section -->
-		<section>
+    <main class="row" role="main">
+        <!-- section -->
+        <section class="column small-12">
 
 		<?php if (have_posts()): the_post(); ?>
 
@@ -75,5 +74,4 @@
 		</section>
 		<!-- /section -->
 	</main>
-
 <?php get_footer(); ?>

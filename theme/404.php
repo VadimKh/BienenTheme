@@ -1,8 +1,7 @@
 <?php get_header(); ?>
-
-	<main role="main">
+	<main class="row" role="main">
 		<!-- section -->
-		<section>
+		<section class="column small-12">
 
 			<!-- article -->
 			<article id="post-404">
@@ -18,5 +17,4 @@
 		</section>
 		<!-- /section -->
 	</main>
-
 <?php get_footer(); ?>

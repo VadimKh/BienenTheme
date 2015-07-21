@@ -1,8 +1,7 @@
 <?php get_header(); ?>
-
-	<main role="main">
-		<!-- section -->
-		<section>
+    <main class="row" role="main">
+        <!-- section -->
+        <section class="column small-12">
 
 			<h1><?php echo sprintf( __( '%s Search Results for ', 'bienen' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
 
@@ -13,5 +12,4 @@
 		</section>
 		<!-- /section -->
 	</main>
-
 <?php get_footer(); ?>
