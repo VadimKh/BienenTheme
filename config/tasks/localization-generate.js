@@ -92,3 +92,5 @@ gulp.task('localization-update', ['localization-read-template'], function(){
         }))
         .pipe(gulp.dest(locConfig.src));
 });
+
+gulp.task('lu', ['localization-update']);

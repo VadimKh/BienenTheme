@@ -21,7 +21,7 @@ _.each(config.cssPreProcessors, function(cssPreprocessor) {
 
 var localizationFiles = [THEME_DIST + '/*.php'];
 _.each(config.excludeFolders, function(folder){
-    localizationFiles.push(THEME_DIST + '/' + folder + '/*.php')
+    localizationFiles.push(THEME_DIST + '/' + folder + '/**/*.php')
 });
 
 module.exports = {

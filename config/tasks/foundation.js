@@ -5,11 +5,11 @@ var bowerFiles = require('main-bower-files');
 var inject = require('gulp-inject');
 var bower = require('gulp-bower');
 
-gulp.task('foundation-install', function(){
+gulp.task('bower-install', function(){
    return  bower();
 });
 
-gulp.task('foundation-scripts', ['foundation-install'], function(){
+gulp.task('bower-scripts', ['bower-install'], function(){
     var vendorsSrc = config.foundation.src;
     var themeDist = config.themeDistributive;
 
@@ -38,9 +38,9 @@ gulp.task('foundation-scripts', ['foundation-install'], function(){
         .pipe(gulp.dest(themeDist));
 });
 
-gulp.task('foundation-scss', ['foundation-scripts'], function(){
+gulp.task('foundation-scss', ['bower-scripts'], function(){
     gulp.src(BOWER_DIRECTORY + config.foundation.scssSrc)
         .pipe(gulp.dest(config.css.distPath + '/foundation'));
 });
 
-gulp.task('foundation', ['foundation-scss']);
+gulp.task('bower', ['foundation-scss']);
