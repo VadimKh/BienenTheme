@@ -95,6 +95,10 @@ add_filter('show_admin_bar', 'bienen_remove_admin_bar'); // Remove Admin bar
 add_filter('style_loader_tag', 'bienen_style_remove'); // Remove 'text/css' from enqueued stylesheet
 add_filter('post_thumbnail_html', 'bienen_remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('avatar_defaults', 'bienen_gravatar'); // Custom Gravatar in Settings > Discussion
+add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
+add_filter('widget_text', 'shortcode_unautop'); // Remove <p> tags in Dynamic Sidebars (better!)
+add_filter('the_excerpt', 'shortcode_unautop'); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
+add_filter('the_excerpt', 'do_shortcode'); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether

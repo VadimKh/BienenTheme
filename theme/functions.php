@@ -27,5 +27,11 @@ require_once( 'library/navigation.php' );
 /** Widgets registration */
 require_once( 'library/widgets.php' );
 
+/** Custom posts registration */
+require_once( 'library/custom-posts.php' );
+
+/** Custom shorcode registration */
+require_once( 'library/shortcode.php' );
+
 /** Woocommerce integration */
 //require_once( 'library/woocommerce.php' );
