@@ -25,8 +25,8 @@ _.each(preprocessors, function(preprocessor) {
             .pipe(compiler())
             .on('error', handleErrors)
             .pipe(autoprefixer({cascade: false, browsers: ['last 2 versions']}))
-            .pipe(gulpif(config.release,minifyCSS({keepBreaks: true})))
-            .pipe(gulpif(config.release,sourcemaps.write()))
+            .pipe(gulpif(config.release,minifyCSS()))
+            .pipe(gulpif(!config.release,sourcemaps.write()))
             .pipe(gulp.dest(cssConfig.destination));
     });
 });
