@@ -47,7 +47,7 @@ gulp.task('generate-pot', function(){
                         localization = {
                             files: [fileWithIndex],
                             msgid: findedStroke,
-                            msgstr: ""
+                            msgstr: findedStroke
                         };
                         localizations.push(localization);
                     }
