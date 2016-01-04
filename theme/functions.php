@@ -18,6 +18,9 @@ require_once('library/theme/styles.php');
 require_once('library/theme/custom.php');
 
 
+/** Register settings page (acf) */
+//require_once('library/settings.php');
+
 /** Cleanup markup */
 require_once('library/theme/markup.php');
 
