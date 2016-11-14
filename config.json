@@ -1,5 +1,5 @@
 {
-  "release": true,
+  "release": false,
   "siteUrl": "http://localhost:8080/",
   "cssPreProcessors": [
     "stylus",
