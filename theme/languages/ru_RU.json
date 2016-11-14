@@ -1,241 +1,326 @@
 [{
   "files": [
-    "..\\404.php:8"
+    "../404.php:8"
   ],
   "msgid": "Page not found",
   "msgstr": "Страница не найдена"
 }, {
   "files": [
-    "..\\404.php:10"
+    "../404.php:10"
   ],
   "msgid": "Return home?",
   "msgstr": "Вернуться домой?"
 }, {
   "files": [
-    "..\\archive.php:5"
+    "../archive.php:5"
   ],
   "msgid": "Archives",
   "msgstr": "Архивы"
 }, {
   "files": [
-    "..\\author.php:7"
+    "../author.php:7"
   ],
   "msgid": "Author Archives for ",
   "msgstr": "Архивы для автора "
 }, {
   "files": [
-    "..\\author.php:13"
+    "../author.php:13"
   ],
   "msgid": "About ",
   "msgstr": "О "
 }, {
   "files": [
-    "..\\author.php:44",
-    "..\\loop.php:25",
-    "..\\single.php:30"
+    "../author.php:44",
+    "../loop.php:25",
+    "../single.php:30"
   ],
   "msgid": "Published by",
   "msgstr": "Автор "
 }, {
   "files": [
-    "..\\author.php:45",
-    "..\\loop.php:26",
-    "..\\single.php:31"
+    "../author.php:45",
+    "../loop.php:26",
+    "../single.php:31"
   ],
   "msgid": "Leave your thoughts",
   "msgstr": "Оставтье ваши комментарии"
 }, {
   "files": [
-    "..\\author.php:45",
-    "..\\loop.php:26",
-    "..\\single.php:31"
+    "../author.php:45",
+    "../loop.php:26",
+    "../single.php:31"
   ],
   "msgid": "1 Comment",
   "msgstr": "1 Комментарий"
 }, {
   "files": [
-    "..\\author.php:45",
-    "..\\loop.php:26",
-    "..\\single.php:31"
+    "../author.php:45",
+    "../loop.php:26",
+    "../single.php:31"
   ],
   "msgid": "% Comments",
   "msgstr": "% Комментариев"
 }, {
   "files": [
-    "..\\author.php:64",
-    "..\\loop.php:42",
-    "..\\page.php:30",
-    "..\\single.php:56"
+    "../author.php:64",
+    "../loop.php:42",
+    "../page.php:30",
+    "../single.php:56"
   ],
   "msgid": "Sorry, nothing to display.",
   "msgstr": "Извините, ничего не найдено"
 }, {
   "files": [
-    "..\\category.php:5"
+    "../category.php:5"
   ],
   "msgid": "Category: ",
   "msgstr": "Категория: "
 }, {
   "files": [
-    "..\\comments.php:2"
+    "../comments.php:2"
   ],
   "msgid": "Post is password protected. Enter the password to view any comments.",
   "msgstr": "Пост защищен паролем. Пожалуйста, введите пароль чтобы просмотреть комментарии."
 }, {
   "files": [
-    "..\\comments.php:17"
+    "../comments.php:17"
   ],
   "msgid": "Comments are closed here.",
   "msgstr": "Комментарии отключены."
 }, {
   "files": [
-    "..\\index.php:5"
+    "../index.php:5"
   ],
   "msgid": "Latest Posts",
   "msgstr": "Последние записи"
 }, {
   "files": [
-    "..\\search.php:5"
+    "../search.php:5"
   ],
   "msgid": "%s Search Results for ",
   "msgstr": "%s Результаты поиска по запросу  "
 }, {
   "files": [
-    "..\\searchform.php:2"
+    "../searchform.php:2"
   ],
   "msgid": "To search, type and hit enter.",
   "msgstr": "Для поиска введите и нажмите enter"
 }, {
   "files": [
-    "..\\searchform.php:3"
+    "../searchform.php:3"
   ],
   "msgid": "Search",
   "msgstr": "Поиск"
 }, {
   "files": [
-    "..\\single.php:36"
+    "../single.php:36"
   ],
   "msgid": "Tags: ",
   "msgstr": "Тэги: "
 }, {
   "files": [
-    "..\\single.php:38"
+    "../single.php:38"
   ],
   "msgid": "Categorised in: ",
   "msgstr": "Находится в категориях: "
 }, {
   "files": [
-    "..\\single.php:40"
+    "../single.php:40"
   ],
   "msgid": "This post was written by ",
   "msgstr": "Этот пост был написан "
 }, {
   "files": [
-    "..\\tag.php:5"
+    "../tag.php:5"
   ],
   "msgid": "Tag Archive: ",
   "msgstr": "Архив тэгов"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:8",
-    "..\\library\\custom-posts.php:9"
+    "../library/custom-posts.php:23"
   ],
-  "msgid": "HTML5 Blank Custom Post",
-  "msgstr": ""
+  "msgid": "Products",
+  "msgstr": "Products"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:10"
+    "../library/custom-posts.php:24"
+  ],
+  "msgid": "Product",
+  "msgstr": "Product"
+}, {
+  "files": [
+    "../library/custom-posts.php:25"
   ],
   "msgid": "Add New",
   "msgstr": ""
 }, {
   "files": [
-    "..\\library\\custom-posts.php:11"
+    "../library/custom-posts.php:26"
   ],
-  "msgid": "Add New HTML5 Blank Custom Post",
-  "msgstr": ""
+  "msgid": "Add New Product",
+  "msgstr": "Add New Product"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:12"
+    "../library/custom-posts.php:27"
   ],
   "msgid": "Edit",
   "msgstr": ""
 }, {
   "files": [
-    "..\\library\\custom-posts.php:13"
+    "../library/custom-posts.php:28"
   ],
-  "msgid": "Edit HTML5 Blank Custom Post",
-  "msgstr": ""
+  "msgid": "Edit Product",
+  "msgstr": "Edit Product"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:14"
+    "../library/custom-posts.php:29"
   ],
-  "msgid": "New HTML5 Blank Custom Post",
-  "msgstr": ""
+  "msgid": "New Product",
+  "msgstr": "New Product"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:15",
-    "..\\library\\custom-posts.php:16"
+    "../library/custom-posts.php:30",
+    "../library/custom-posts.php:31"
   ],
-  "msgid": "View HTML5 Blank Custom Post",
-  "msgstr": ""
+  "msgid": "View Product",
+  "msgstr": "View Product"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:17"
+    "../library/custom-posts.php:32"
   ],
-  "msgid": "Search HTML5 Blank Custom Post",
-  "msgstr": ""
+  "msgid": "Search Products",
+  "msgstr": "Search Products"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:18"
+    "../library/custom-posts.php:33"
   ],
-  "msgid": "No HTML5 Blank Custom Posts found",
-  "msgstr": ""
+  "msgid": "Products not found",
+  "msgstr": "Products not found"
 }, {
   "files": [
-    "..\\library\\custom-posts.php:19"
+    "../library/custom-posts.php:34"
   ],
-  "msgid": "No HTML5 Blank Custom Posts found in Trash",
-  "msgstr": ""
+  "msgid": "Products not found in Trash",
+  "msgstr": "Products not found in Trash"
 }, {
   "files": [
-    "..\\library\\navigation.php:10"
+    "../library/custom-posts.php:47"
+  ],
+  "msgid": "Categories",
+  "msgstr": "Categories"
+}, {
+  "files": [
+    "../library/custom-posts.php:48",
+    "../library/custom-posts.php:57"
+  ],
+  "msgid": "Category",
+  "msgstr": "Category"
+}, {
+  "files": [
+    "../library/custom-posts.php:49"
+  ],
+  "msgid": "Search Categories",
+  "msgstr": "Search Categories"
+}, {
+  "files": [
+    "../library/custom-posts.php:50"
+  ],
+  "msgid": "All Categories",
+  "msgstr": "All Categories"
+}, {
+  "files": [
+    "../library/custom-posts.php:51"
+  ],
+  "msgid": "Parent Category",
+  "msgstr": "Parent Category"
+}, {
+  "files": [
+    "../library/custom-posts.php:52"
+  ],
+  "msgid": "Parent Category:",
+  "msgstr": "Parent Category:"
+}, {
+  "files": [
+    "../library/custom-posts.php:53"
+  ],
+  "msgid": "Edit Category",
+  "msgstr": "Edit Category"
+}, {
+  "files": [
+    "../library/custom-posts.php:54"
+  ],
+  "msgid": "Update Category",
+  "msgstr": "Update Category"
+}, {
+  "files": [
+    "../library/custom-posts.php:55"
+  ],
+  "msgid": "Add New Category",
+  "msgstr": "Add New Category"
+}, {
+  "files": [
+    "../library/custom-posts.php:56"
+  ],
+  "msgid": "New Category Name",
+  "msgstr": "New Category Name"
+}, {
+  "files": [
+    "../library/navigation.php:10"
   ],
   "msgid": "Navigation",
   "msgstr": ""
 }, {
   "files": [
-    "..\\library\\widgets.php:6"
+    "../library/settings.php:3",
+    "../library/settings.php:4"
+  ],
+  "msgid": "Basic info",
+  "msgstr": "Basic info"
+}, {
+  "files": [
+    "../library/settings.php:12"
+  ],
+  "msgid": "Home",
+  "msgstr": "Home"
+}, {
+  "files": [
+    "../library/settings.php:13"
+  ],
+  "msgid": "Home page",
+  "msgstr": "Home page"
+}, {
+  "files": [
+    "../library/widgets.php:6"
   ],
   "msgid": "Search Widget",
   "msgstr": "Виджет поиска"
 }, {
   "files": [
-    "..\\library\\widgets.php:7"
+    "../library/widgets.php:7"
   ],
   "msgid": "Put search widget here...",
   "msgstr": ""
 }, {
   "files": [
-    "..\\library\\theme\\custom.php:33"
+    "../library/theme/custom.php:33"
   ],
   "msgid": "View Article",
   "msgstr": "Просмотреть статью"
 }, {
   "files": [
-    "..\\library\\theme\\custom.php:67"
+    "../library/theme/custom.php:67"
   ],
   "msgid": "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>",
   "msgstr": ""
 }, {
   "files": [
-    "..\\library\\theme\\custom.php:76"
+    "../library/theme/custom.php:76"
   ],
   "msgid": "%1$s at %2$s",
   "msgstr": ""
 }, {
   "files": [
-    "..\\library\\theme\\custom.php:76"
+    "../library/theme/custom.php:76"
   ],
   "msgid": "(Edit)",
   "msgstr": "(Редактировать)"

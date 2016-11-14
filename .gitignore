@@ -1,8 +1,11 @@
 src
 .idea
 node_modules
+npm-debug.log
+npm-debug.log*
 bower_components
 theme/js/vendors
 theme/css/vendors
 theme/css/foundation.scss
 theme/css/normalize.scss
+dist

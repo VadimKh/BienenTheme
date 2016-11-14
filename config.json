@@ -1,6 +1,6 @@
 {
   "release": true,
-  "siteUrl": "http://examp.le/",
+  "siteUrl": "http://localhost:8080/",
   "cssPreProcessors": [
     "stylus",
     "sass"

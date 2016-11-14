@@ -3,7 +3,7 @@ var AVAILABLE_PREPROCESSORS = {
         less: "less",
         sass: ["scss", "sass"]
 };
-var THEME_PATH = "../wp-content/themes/bienen";
+var THEME_PATH = "./dist/bienen";
 var THEME_DIST = "./theme";
 var IGNORED_FOLDERS = ["js", "css"];
 
