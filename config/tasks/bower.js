@@ -38,9 +38,9 @@ gulp.task('bower-scripts', ['bower-install'], function(){
         .pipe(gulp.dest(config.bower.functionPath));
 });
 
-gulp.task('foundation-scss', ['bower-scripts'], function(){
+gulp.task('bootstrap-sass', ['bower-scripts'], function(){
     gulp.src(BOWER_DIRECTORY + config.bower.scssSrc)
         .pipe(gulp.dest(config.css.distPath + '/vendors'));
 });
 
-gulp.task('bower', ['foundation-scss']);
+gulp.task('bower', ['bootstrap-sass']);

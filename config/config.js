@@ -45,7 +45,7 @@ module.exports = {
         functionPath: THEME_DIST + '/library',
         functionScriptsPath: THEME_DIST + '/library/custom-scripts.php',
         src: 'js/vendors',
-        scssSrc: '/foundation/scss/**/*.scss'
+        scssSrc: '/bootstrap-sass/assets/stylesheets/**/*.scss'
     },
     img: {
         src: [THEME_DIST + '/**/*.png', THEME_DIST + '/**/*.jpg', THEME_DIST + '/**/*.jpeg', THEME_DIST + '/**/*.gif'],
