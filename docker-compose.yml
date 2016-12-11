@@ -8,7 +8,7 @@ services:
       - 8080:80
       - 443:443
     volumes:
-      # - ./dist/data:/data # Required if importing an existing database
+      - ./dist/data:/data # Required if importing an existing database
       - ./dist/wp-content/uploads:/app/wp-content/
       # - ./yourplugin:/app/wp-content/plugins/yourplugin # Plugin development
       - ./dist/bienen:/app/wp-content/themes/Anna   # Theme development
@@ -17,8 +17,7 @@ services:
       DB_NAME: wordpress
       DB_PASS: root # must match below
       PLUGINS: >-
-        academic-bloggers-toolkit,
-        co-authors-plus,
+        wp-migrate-db,
         [WP-API-master]https://github.com/WP-API/WP-API/archive/master.zip,
       SEARCH_REPLACE: yoursite.com,localhost:8080
       WP_DEBUG: 'true'
@@ -27,7 +26,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - /dist/data:/var/lib/mysql
+      - ./dist/data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
 volumes:

@@ -8,7 +8,7 @@
     "url": "https://github.com/VadimKh/html5blank.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wp": "wpcmd() { docker exec $(docker ps -lq) /bin/bash -c \"sudo -u www-data wp $(echo $@)\"; };wpcmd "
   },
   "author": "Khoroshiltsev Vadim",
   "license": "ISC",
